@@ -1,0 +1,47 @@
+
+input{
+    margin: 20px;
+}
+
+
+
+form{
+    text-align: center;
+    border: 1px solid black;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+
+}
+
+.formfield * {
+    vertical-align: middle;
+}
+
+label{
+    padding-right: 10px;
+}
+
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+li{
+    padding: 7px;
+    }
+
+#addbutton:hover {
+    background-color: lightgreen;
+
+}
+
+#removebutton{
+    margin-left: 20px;
+}
+
+#removebutton:hover{
+    background-color: red;
+}
