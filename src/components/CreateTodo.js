@@ -1,4 +1,3 @@
-import { getSpaceUntilMaxLength } from '@testing-library/user-event/dist/utils'
 import React, {Component} from 'react'
 
 import '../styles/CreateTodo.css'
@@ -29,16 +28,16 @@ class CreateTodo extends Component {
 
     HandleRemove(ind){
         this.setState({
-            todo: this.state.todo.filter((todo, index) => {return index!=ind })
-
+            todo: this.state.todo.filter((todo, index) => {return index!==ind })
         })
     }
+    SetTodo
 
 
     render (){
         return <div>
             <form onSubmit={this.AddNewTodo}>
-            <h1>Add a Todo</h1>
+            <h1>Add a ToDo</h1>
             <input type="text" ref={this.inputRef} name="title" placeholder='What to Do?' required></input> 
             <button type="submit" id="addbutton">Add</button>
             <ul>{ this.state.todo.map((todo, index) => (<li key={index}>{todo}  <button type="button" id='removebutton' onClick={() => this.HandleRemove(index)}>Remove</button></li> ) )}  
